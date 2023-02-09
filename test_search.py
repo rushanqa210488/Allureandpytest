@@ -16,12 +16,12 @@ class TestPageSearch:
     # blocker  critical normal minor trivial
 
     @allure.feature('Open pages')
-    @allure.story('Открываем страницу google.com')
+    @allure.story('Открываем Страницу google.com')
     @allure.severity('blocker')
     def test_google_search(self):
         self.driver.get('https://google.com')
         with allure.step('Делаем скриншот'):
-            assert self.driver.title == 'Google'
+            assert self.driver.title == 'Google '
 
     @allure.feature('Open pages')
     @allure.story('Открываем страницу yandex.ru')
@@ -45,4 +45,4 @@ class TestPageSearch:
     def test_mail_search(self):
         self.driver.get('https://mail.ru')
         with allure.step('Делаем скриншот'):
-            assert self.driver.title == 'Mail.ru: почта, поиск в интернете, новости, игры'
+            assert self.driver.title == ' Mail.ru: почта, поиск в интернете, новости, игры'
